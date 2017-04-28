@@ -3,13 +3,7 @@
 
 
         <h1><?php echo get_the_title(); ?></h1>
-        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-            <?php
-                if(function_exists('bcn_display')) {
-                    bcn_display();
-                }
-            ?>
-        </div>
+        <?php the_breadcrumb(); ?>
 
         <div class="flex-container">
             <main class="main">

@@ -30,8 +30,5 @@
 	        </div>
 	    </footer>
 
-		<script type="text/javascript">
-			ragadjust('p, li, h3', 'all');
-		</script>
 	</body>
 </html>

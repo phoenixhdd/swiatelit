@@ -5,6 +5,7 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900" rel="stylesheet">
 
 	  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
@@ -14,7 +15,6 @@
 
 	  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	  <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js" type="text/javascript"></script>
-	  <script src="<?php echo get_template_directory_uri(); ?>/js/lamanie.js" type="text/javascript"></script>
 
 	  <?php wp_head(); ?>
 	</head>
@@ -28,17 +28,10 @@
 	    <header class="container px-0">
 	        <div class="top_bar">
 	            <div class="logo">
-	                <?php the_custom_logo(); ?><a href="<?php echo get_site_url(); ?>">
+	                <?php the_custom_logo(); ?><a href="#">
 	                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
 	                </a>
 	            </div>
-
-				<div class="menu-toggle-btn">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-
 	            <div class="navigation">
 	                <nav>
 	                    <ul>

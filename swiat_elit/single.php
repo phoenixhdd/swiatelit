@@ -8,35 +8,22 @@
 						<h1>
 		    				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		    			</h1>
-						<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-				            <?php
-				                if(function_exists('bcn_display')) {
-				                    bcn_display();
-				                }
-				            ?>
-				        </div>
+						<?php the_breadcrumb(); ?>
 					</div>
 					<div class="post-content">
 						<div class="post-text">
-							<div class="post-image">
-								<?php if ( has_post_thumbnail()) : ?>
-				    				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				    					<?php the_post_thumbnail(); ?>
-				    				</a>
-				    			<?php endif; ?>
-							</div>
+							<?php if ( has_post_thumbnail()) : ?>
+			    				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			    					<?php the_post_thumbnail(); ?>
+			    				</a>
+			    			<?php endif; ?>
 
 							<?php the_content(); ?>
 							<?php edit_post_link(); ?>
 						</div>
 		    			<?php get_sidebar(); ?>
 					</div>
-
-
-
 	    		</article>
-
-
 	    	<?php endwhile; ?>
 	    	<?php else: ?>
 	    		<article>
@@ -67,7 +54,7 @@
 						<div class="news_block">
 							<div class="news_pic">
 								<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-								<div class="news_picture"  style="background: url('<?php echo $thumb['0'];?>') no-repeat;  background-position: center; background-size: cover;">
+								<div class="news_picture"  style="background: url('<?php echo $thumb['0'];?>') no-repeat;  background-position: center; height: 199px; width: 270px; background-size: cover;">
 							</div>
 							</div>
 							<div class="news_text">

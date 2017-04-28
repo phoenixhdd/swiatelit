@@ -1,0 +1,3 @@
+[0405/134811:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Odmowa dostêpu. (0x5)
+[0405/134811:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: Potok zosta³ zakoñczony. (0x6D)
+[0405/134811:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Odmowa dostêpu. (0x5)
